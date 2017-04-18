@@ -1,0 +1,269 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+		
+						/******** importing web font **************/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+
+.clear {
+  clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	 background-color: #f0efef;	
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+
+
+	/****** all  a,h1  tag in the page *******/
+a {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+
+  /*************** header ***********/
+header {
+	background-color: #033048;
+	color:white;
+	overflow: hidden;
+}
+
+
+header:after{  /****** Clear fix*******/
+	content: "";
+	clear:both;
+	display:block;
+}
+
+
+	/****** header logo on the left *******/
+#logo {
+	float: left;
+	margin-left: 120px;
+	margin-top: 25px;
+	margin-bottom: 40px;
+}
+
+
+	/********** navbar************/
+nav {
+	float: right;
+	margin-right: 150px;
+}
+
+nav ul li a {
+	color:#f9e42e;
+	padding:0 20px 0 20px;
+}
+
+nav li{
+	display:inline-block;
+	font-size:24px;
+	font-weight: 300;
+	margin-left: 20px;
+	padding-top:40px;
+	position: relative; /** this position working on list item**/
+}
+
+
+nav a::before {  
+	content: "";
+	display: block;
+	height: 10px;
+	width: 0px;
+	background-color:#f9e42e;
+	position: absolute; /** working on whole HTML page**/
+	top:0px;
+	transition: all ease-in-out 250ms; /** transition effect **/
+}
+
+nav a:hover::before {
+	width: 100%;
+}
+
+
+
+
+/************ section ************/
+
+#news-section { /**Placing in the middle of the page (except header section)**/
+	margin: auto;
+	width: 75%;
+}
+
+section {
+	width: 700px;
+	float: left;
+}
+
+h2 {
+	font-size: 40px;
+	color:#033048;
+	padding:40px 5px 12px 0;
+	line-height: 1.2;
+}
+
+
+
+
+
+/********* left side body text *********/
+
+.section-paragraph {  
+	font-size: 24px;
+	font-weight: 100;
+	padding:15px 0 50px 0;
+}
+
+.section-paragraph::first-letter { /* styling first letter of the body text */
+	font-size: 40px;
+	font-weight: bolder;
+	vertical-align:baseline;
+}
+
+
+/****************Buttons****************/
+
+button {
+	float: right;
+	font-size: 24px;
+	font-weight: 600;
+	border:none;
+	background-color:#f0efef;
+	padding-bottom: 50px;
+}
+
+button a {
+	color:#033048;
+}
+
+
+/****************solid line under the "read more button" ****************/
+.line {
+	border:1px solid #606161;
+	margin-bottom: 60px;
+}
+
+
+/****************aside" ****************/
+aside{
+	width: 240px;
+	float:right;
+}
+
+
+.aside-body-text{
+	padding-top: 50px;
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: 600;
+	color:#033048;
+}
+
+.aside-body-text p{
+	font-size: 24px;
+	font-weight:lighter;
+}
+
+
+.aside-body-text button{
+	float: left;
+}
+
+/*********** Ad Image *************/
+
+aside #ad{
+	clear: both;
+}
+
+
+	/*********** footer *************/
+
+footer { 
+	text-align: center;
+	background-color:#121212;
+}
+
+.sign-up-sec {
+	margin: auto;
+	display: block;
+	text-align: center;
+	padding:45px;
+	background-color: #f9e42e;
+}
+
+#sign-up-now {
+	background-color: #033048;
+	color:white;
+	padding:10px 40px;
+	border-radius: 5px;
+}
+
+#footer-logo {
+	color:#f9e42e;
+	padding: 40px;
+	display: block;
+}
+
+footer img{
+	padding: 40px 20px;
+}
+
+footer p {
+	font-size: 9px;
+	font-weight: 600;
+	padding-bottom: 15px;
+	color:white;
+}
+
+
+
+
+
