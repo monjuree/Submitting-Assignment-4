@@ -5,7 +5,6 @@ Author: Your Name
 Developer @GA in NYC
 */
 
-
 /******************************************
 /* SETUP
 /*******************************************/
@@ -175,12 +174,13 @@ button {
 	font-weight: 600;
 	border:none;
 	background-color:#f0efef;
-	padding-bottom: 50px;
+	padding-bottom:30px;
 }
 
 button a {
 	color:#033048;
 }
+
 
 
 /****************solid line under the "read more button" ****************/
@@ -199,17 +199,20 @@ aside{
 
 .aside-body-text{
 	padding-top: 50px;
+	margin-bottom: 60px;
 }
 
 h3 {
 	font-size: 32px;
 	font-weight: 600;
 	color:#033048;
+	display: inline-block;
 }
 
 .aside-body-text p{
 	font-size: 24px;
 	font-weight:lighter;
+
 }
 
 
@@ -231,6 +234,11 @@ footer {
 	background-color:#121212;
 }
 
+
+
+
+		/*********** footer Sing uo now butto*************/
+
 .sign-up-sec {
 	margin: auto;
 	display: block;
@@ -239,12 +247,61 @@ footer {
 	background-color: #f9e42e;
 }
 
-#sign-up-now {
+#signUpNow {
 	background-color: #033048;
 	color:white;
 	padding:10px 40px;
 	border-radius: 5px;
 }
+
+
+		/*********** footer form-submission section  *************/
+#formContainer {
+	margin: auto;
+	margin-top: 40px;
+	width: 60%;
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+
+			/*********** Submission Signup and Cancle button  *************/
+
+
+#submission {
+	margin-top: 20px;
+	margin-bottom: 150px;
+	 transition: .5s height ease-in-out;
+}
+
+.cancelbtn, .signupbtn {
+    background-color:#AAA9A9;
+    color: white;
+	font-size: 20px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    cursor: pointer;
+    width: 50%;
+}
+
+.signupbtn:hover {
+	background-color: #55A548;
+}
+
+.cancelbtn:hover {
+	background-color: #B03436;
+}
+
+
+
+		/*********** footer logo and social media  *************/
 
 #footer-logo {
 	color:#f9e42e;

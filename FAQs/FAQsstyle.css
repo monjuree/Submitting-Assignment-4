@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body{
+  background-color:yellow;
+  font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  
+}
+
+h1{
+  
+  font-size:48px;
+  font-weight: bolder;
+}
+
+h2{
+  cursor:pointer;
+}
+p{
+  color:red;
+}
+
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
